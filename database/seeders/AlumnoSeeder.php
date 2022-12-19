@@ -32,7 +32,24 @@ class AlumnoSeeder extends Seeder
                 'password' => 'contrasena',
                 'email' => 'F@gmail.com',
                 'sexo' => 'hombre'
+            ],
+            [
+                'nombre' => 'Javi',
+                'telefono' => '12399999',
+                'edad' => 30,
+                'password' => 'soydinitri',
+                'email' => 'j@gmail.com',
+                'sexo' => 'mujer'
             ]
+            //Para crear uno rapido
+            /*
+            "nombre" :  "Javi",
+            "telefono" : "12399999",
+            "edad" : 30,
+            "password" : "soydinitri",
+            "email" : "j@gmail.com",
+            "sexo" : "mujer"
+            */
         ]);
     }
 }

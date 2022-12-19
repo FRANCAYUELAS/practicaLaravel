@@ -55,6 +55,7 @@ class AlumnoController extends Controller
             'data' => $datos,
         ];
         return response()->json($response, 201);
+        //respuesta 201 indica que la solicitud ha tenido exito por lo que se ha creado
     }
 
     public function update(Request $request) {

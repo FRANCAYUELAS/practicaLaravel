@@ -15,6 +15,7 @@ class AlumnoSeeder extends Seeder
      */
     public function run()
     {
+        //Creamos los alumnos
         DB::table('alumnos')->insert([
             [
                 'nombre' => 'Juan',

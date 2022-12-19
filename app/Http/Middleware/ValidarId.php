@@ -16,6 +16,7 @@ class ValidarId
      */
     public function handle(Request $request, Closure $next)
     {
+        //Compruebo que el id es valido
         $id = $request->id;
         if (is_numeric($id) && $id > 0) {
             return $next($request);

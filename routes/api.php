@@ -19,8 +19,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 */
+
+//Grupo de rutas de alumnnos 
 Route::prefix('/alumnos')->group(function() {
+
+    //RUTAS Y METODOS PARA COGER POR ID CREAR MODIFICAR Y ELIMINAR
     Route::get('', [AlumnoController::Class, 'getAll']);
+
+    //Primero accedemos a validate.id y luego si es correcto va a la funcion getById
     Route::middleware('validate.id')->get('/{id}', [AlumnoController::Class, 'getById']);
     Route::middleware('validate.id')->delete('/{id}', [AlumnoController::Class, 'delete']);
     Route::post('', [AlumnoController::Class, 'create']);

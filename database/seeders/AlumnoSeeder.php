@@ -23,7 +23,8 @@ class AlumnoSeeder extends Seeder
                 'edad' => 20,
                 'password' => 'contrasena',
                 'email' => 'a@gmail.com',
-                'sexo' => 'hombre'
+                'sexo' => 'hombre',
+                'curso_id' => 1
             ],
             [
                 'nombre' => 'Fran',
@@ -31,7 +32,8 @@ class AlumnoSeeder extends Seeder
                 'edad' => 10,
                 'password' => 'contrasena',
                 'email' => 'F@gmail.com',
-                'sexo' => 'hombre'
+                'sexo' => 'hombre',
+                'curso_id' => 1
             ],
             [
                 'nombre' => 'Javi',
@@ -39,7 +41,8 @@ class AlumnoSeeder extends Seeder
                 'edad' => 30,
                 'password' => 'soydinitri',
                 'email' => 'j@gmail.com',
-                'sexo' => 'mujer'
+                'sexo' => 'mujer',
+                'curso_id' => 1
             ]
             //Para crear uno rapido
             /*

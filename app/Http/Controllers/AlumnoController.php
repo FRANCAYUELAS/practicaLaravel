@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Alumno;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -70,5 +71,20 @@ class AlumnoController extends Controller
 
         DB::table('alumnos')->where('id', $request->id)->update($datos);
         
+    }
+
+    //
+    public function curso(Request $request) {
+        //recogemos el alumno
+        $alumno = Alumno::find($request->id);
+        //devolvemos el curso del alumno
+        return response()->json($alumno->curso);
+    }
+
+    public function asiento(Request $request) {
+        //recogemos el alumno
+        $alumno = Alumno::find($request->id);
+        //devolvemos el asiento del alumno
+        return response()->json($alumno->asiento);
     }
 }

@@ -1,4 +1,4 @@
-1- Crear el proyecto ejecuta el comando.
+1-  Para crear el proyecto ejecuta el comando.
 
     composer create-project laravel/laravel practicaLaravel
 
